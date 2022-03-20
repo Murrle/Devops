@@ -3,7 +3,8 @@ pipeline {
       stages {
         stage('log version info') {
       steps {
-        sh 'docker run -d -u root --name mm12 openjdk'
+        sh 'docker run -d --name mm12 openjdk'
+        docker stop mm12
       }
     }
   }
