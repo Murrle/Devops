@@ -3,7 +3,8 @@ pipeline {
       stages {
         stage('log version info') {
       steps {
-        sh 'java --version'
+        sh 'docker run -d --name test1 openjdk'
+        sh 'docker stop test1'
       }
     }
   }
