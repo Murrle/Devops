@@ -3,8 +3,7 @@ pipeline {
       stages {
         stage('log version info') {
       steps {
-        sh 'docker run -d --name test1 openjdk'
-        sh 'docker stop test1'
+        sh 'docker run -d --name Murali openjdk:latest'
       }
     }
   }
