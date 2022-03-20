@@ -3,7 +3,7 @@ pipeline {
       stages {
         stage('log version info') {
       steps {
-        sh 'docker images'
+        sh 'docker run -d -u root --name mm12 openjdk'
       }
     }
   }
