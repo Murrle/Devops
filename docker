@@ -3,7 +3,7 @@ pipeline {
       stages {
         stage('log version info') {
       steps {
-        sh 'docker run -d --name mm12 openjdk'
+        echo "Hi Murali"
       }
     }
   }
